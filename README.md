@@ -1,0 +1,3 @@
+# young_license
+一个制作和提供license服务的小项目
+为web-mvc项目提供license服务,无需侵入代码,只需要简单的配置即可实现license认证
