@@ -5,46 +5,27 @@
 	<groupId>com.young.license</groupId>
 	<artifactId>license</artifactId>
 	<version>1.0</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>license-base</module>
+		<module>license-server</module>
+		<module>license-client</module>
+		<module>license-example</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>license</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-version>3.2.3.RELEASE</spring-version>
+		<truelicense-version>1.32</truelicense-version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>de.schlichtherle.truelicense</groupId>
 			<artifactId>truelicense-core</artifactId>
-			<version>1.32</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>${spring-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aspects</artifactId>
-			<version>${spring-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${spring-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${spring-version}</version>
+			<version>${truelicense-version}</version>
 		</dependency>
 	</dependencies>
 </project>
